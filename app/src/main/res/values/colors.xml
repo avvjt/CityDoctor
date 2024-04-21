@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="blue">#116FAC</color>
+    <color name="nav_selected">#116FAC</color>
+    <color name="nav_unselect">#116FAC</color>
 </resources>
