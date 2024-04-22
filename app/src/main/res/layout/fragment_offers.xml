@@ -1,14 +1,546 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Offers">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="hello offers fragment" />
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
 
-</FrameLayout>
+            <!--Toolbar layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="5dp">
+                <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/back_left"
+                    android:background="@color/transparent"
+                    android:onClick="back8"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Offer"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginStart="100dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exclusive For You"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="20dp"/>
+
+            <!--Top scrollable banner-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/banner1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/banner2"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exclusive For You"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="20dp"/>
+
+            <!--Filter scrollable layout-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="All"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter_medium"
+                        android:background="@drawable/shape_blue"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="50% Offer"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_bold"
+                        android:background="@drawable/shape_rt1"
+                        android:layout_marginStart="10dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="40% Offer"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_bold"
+                        android:background="@drawable/shape_rt1"
+                        android:layout_marginStart="10dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="25% Offer"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_bold"
+                        android:background="@drawable/shape_rt1"
+                        android:layout_marginStart="10dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="10% Offer"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_bold"
+                        android:background="@drawable/shape_rt1"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!--Most complex item layout-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shape_stroke">
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle1501"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:id="@+id/discount_button"
+                    android:text="30-45 Mins"
+                    android:textSize="11sp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_blue"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="GP Pediatrician"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_toRightOf="@id/imageview"
+                    android:id="@+id/textview_first"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    android:text="50% Off"
+                    android:background="@drawable/shape_red"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/textview_first3"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/black"
+                    android:text="There are many variations of passag
+es of Lorem Ipsum …"
+                    android:layout_below="@id/textview_first"
+                    android:layout_toRightOf="@id/imageview"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="AED 000"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_toRightOf="@id/imageview"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/textview_first1"
+                    android:paddingBottom="3dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:textSize="14sp"
+                    android:drawablePadding="-10dp"
+                    android:layout_toEndOf="@id/textview_first1"
+                    android:text="4.8 (108)"
+                    android:drawableStart="@drawable/star"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_medium"
+                    android:background="@drawable/shape_blue"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shape_stroke">
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle1501"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:id="@+id/discount_button1"
+                    android:text="30-45 Mins"
+                    android:textSize="11sp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_blue"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="GP Pediatrician"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_toRightOf="@id/imageview1"
+                    android:id="@+id/textview_first111"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    android:text="50% Off"
+                    android:background="@drawable/shape_red"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/textview_first31"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/black"
+                    android:text="There are many variations of passag
+es of Lorem Ipsum …"
+                    android:layout_below="@id/textview_first11"
+                    android:layout_toRightOf="@id/imageview1"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="AED 000"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_toRightOf="@id/imageview1"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/textview_first11"
+                    android:paddingBottom="3dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:textSize="14sp"
+                    android:drawablePadding="-10dp"
+                    android:layout_toEndOf="@id/textview_first11"
+                    android:text="4.8 (108)"
+                    android:drawableStart="@drawable/star"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_medium"
+                    android:background="@drawable/shape_blue"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shape_stroke">
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle1501"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:id="@+id/discount_button2"
+                    android:text="30-45 Mins"
+                    android:textSize="11sp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_blue"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="GP Pediatrician"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_toRightOf="@id/imageview2"
+                    android:id="@+id/textview_first222"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    android:text="50% Off"
+                    android:background="@drawable/shape_red"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/textview_first32"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/black"
+                    android:text="There are many variations of passag
+es of Lorem Ipsum …"
+                    android:layout_below="@id/textview_first22"
+                    android:layout_toRightOf="@id/imageview2"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="AED 000"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_toRightOf="@id/imageview2"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/textview_first22"
+                    android:paddingBottom="3dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:textSize="14sp"
+                    android:drawablePadding="-10dp"
+                    android:layout_toEndOf="@id/textview_first22"
+                    android:text="4.8 (108)"
+                    android:drawableStart="@drawable/star"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_medium"
+                    android:background="@drawable/shape_blue"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/shape_stroke">
+                <ImageView
+                    android:id="@+id/imageview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle1501"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:id="@+id/discount_button3"
+                    android:text="30-45 Mins"
+                    android:textSize="11sp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_blue"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="GP Pediatrician"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_toRightOf="@id/imageview3"
+                    android:id="@+id/textview_first333"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    android:text="50% Off"
+                    android:background="@drawable/shape_red"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/textview_first33"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/black"
+                    android:text="There are many variations of passag
+es of Lorem Ipsum …"
+                    android:layout_below="@id/textview_first33"
+                    android:layout_toRightOf="@id/imageview3"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:text="AED 000"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_toRightOf="@id/imageview3"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/star"
+                    android:paddingBottom="3dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:textSize="14sp"
+                    android:drawablePadding="-10dp"
+                    android:layout_toEndOf="@id/star"
+                    android:text="4.8 (108)"
+                    android:drawableStart="@drawable/star"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/inter_medium"
+                    android:background="@drawable/shape_blue"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

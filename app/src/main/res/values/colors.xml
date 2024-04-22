@@ -4,9 +4,11 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="blue">#116FAC</color>
-    <color name="nav_selected">#116FAC</color>
-    <color name="nav_unselect">#116FAC</color>
     <color name="transparent">#00000000</color>
     <color name="gray">#A3A3A3</color>
+    <color name="gray2">#555555</color>
+    <color name="light_gray">#F5F5F5</color>
     <color name="red">#FF2727</color>
+    <color name="blue_back">#006FAC</color>
+
 </resources>

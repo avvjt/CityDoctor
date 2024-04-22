@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Account">
+    tools:context="Account">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,7 +14,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="20dp">
 
             <!--Toolbar layout-->
             <LinearLayout
@@ -27,7 +28,6 @@
                     android:layout_height="45dp"
                     android:src="@drawable/back_left"
                     android:background="@color/transparent"
-                    android:layout_margin="20dp"
                     android:onClick="back8"/>
 
                 <TextView
@@ -38,22 +38,23 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:fontFamily="@font/inter_bold"
-                    android:layout_marginStart="50dp"/>
+                    android:layout_marginStart="100dp"/>
             </LinearLayout>
 
             <!--Profile defiles-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
                 <ImageView
                     android:id="@+id/usa_imageview"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:background="@color/transparent"
                     android:elevation="2dp"
                     android:gravity="center_vertical"
-                    android:src="@mipmap/ic_launcher_round"
+                    android:src="@drawable/ellipse"
                     android:layout_gravity="center_horizontal"/>
 
                 <TextView
@@ -63,6 +64,7 @@
                     android:gravity="center"
                     android:textColor="@color/black"
                     android:textSize="20sp"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_bold"/>
 
                 <TextView
@@ -71,7 +73,7 @@
                     android:text="+91 9002788123"
                     android:gravity="center"
                     android:textColor="@color/gray"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
                     android:fontFamily="@font/inter_medium"/>
             </LinearLayout>
 
@@ -80,7 +82,7 @@
                 android:id="@+id/profile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal"
                 android:onClick="profile">
 
@@ -100,12 +102,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/inter_medium"
                         android:gravity="center_vertical"
+                        android:textStyle="bold"
                         android:text="Profile"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="17sp" />
                 </LinearLayout>
 
 
@@ -131,14 +134,16 @@
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:background="@color/gray" />
             <!--Booking-->
             <LinearLayout
                 android:id="@+id/booking"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:onClick="booking">
 
@@ -158,12 +163,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/inter_medium"
                         android:gravity="center_vertical"
+                        android:textStyle="bold"
                         android:text="Booking"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="17sp" />
                 </LinearLayout>
 
 
@@ -189,14 +195,16 @@
                 android:id="@+id/view3"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:background="@color/gray" />
             <!--Addresses-->
             <LinearLayout
                 android:id="@+id/Addresses"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:onClick="sendmoney_page">
 
@@ -216,12 +224,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/inter_medium"
                         android:gravity="center_vertical"
+                        android:textStyle="bold"
                         android:text="Addresses"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="17sp" />
                 </LinearLayout>
 
 
@@ -244,10 +253,13 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/vieff"
+                android:id="@+id/view6"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:background="@color/gray" />
 
             <!--Payment-->
@@ -255,7 +267,6 @@
                 android:id="@+id/Payment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:onClick="Payment">
 
@@ -275,12 +286,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/inter_medium"
                         android:gravity="center_vertical"
+                        android:textStyle="bold"
                         android:text="Payment Method"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="17sp" />
                 </LinearLayout>
 
 
@@ -303,11 +315,13 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/vihhew4"
+                android:id="@+id/view0"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:background="@color/gray" />
 
             <!--Wallet-->
@@ -315,7 +329,6 @@
                 android:id="@+id/Wallet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:onClick="sendmoney_page">
 
@@ -335,12 +348,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/inter_medium"
                         android:gravity="center_vertical"
+                        android:textStyle="bold"
                         android:text="Wallet"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="17sp" />
                 </LinearLayout>
 
 
@@ -363,11 +377,13 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/view4dd"
+                android:id="@+id/view654"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:background="@color/gray" />
 
             <!--help-->
@@ -375,7 +391,6 @@
                 android:id="@+id/help"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:onClick="help">
 
@@ -395,12 +410,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/inter_medium"
                         android:gravity="center_vertical"
+                        android:textStyle="bold"
                         android:text="Help Center"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="17sp" />
                 </LinearLayout>
 
 
@@ -426,21 +442,27 @@
                 android:id="@+id/view4"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:background="@color/gray" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Logout"
-                android:textColor="@color/red"
-                android:background="@color/transparent"
-                android:layout_gravity="end"
-                android:onClick="logout"/>
 
         </LinearLayout>
 
     </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/inter_bold"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:padding="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
