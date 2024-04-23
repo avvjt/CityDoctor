@@ -7,4 +7,10 @@
     <string name="account">Account</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="doctor_text">Doctor \n House Visit</string>
+    <string name="buty_text">Beauty &amp; \n Aesthetics</string>
+    <string name="therapy_text">IV Drip \n Therapy</string>
+    <string name="lab_text">Lab Tests &amp; \n Checkups</string>
+    <string name="Chiropractic_text">Physio &amp; \n Chiropractic</string>
+    <string name="nursing_text">Nursing \n Home Care</string>
 </resources>
